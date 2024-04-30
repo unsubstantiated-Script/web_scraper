@@ -29,9 +29,11 @@ def store(extracted):
     with open('data.txt', 'a') as file:
         file.write(extracted + "\n")
 
+
 def read(extracted):
     with open('data.txt') as file:
         return file.read()
+
 
 if __name__ == '__main__':
     extracted = extract(scrape(URL))
