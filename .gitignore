@@ -1,5 +1,6 @@
 .idea
 .venv
+.idea/misc.xml
 
 *daily_news_api.iml
 # created by virtualenv automatically
