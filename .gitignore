@@ -1,4 +1,5 @@
 .idea
+.venv
 
 *daily_news_api.iml
 # created by virtualenv automatically
@@ -66,7 +67,6 @@ __pypackages__/
 
 # Environment
 .env
-.venv
 env/
 venv/
 ENV/
