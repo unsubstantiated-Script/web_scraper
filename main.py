@@ -1,4 +1,6 @@
 import os
+import time
+
 import requests
 import selectorlib
 
@@ -39,10 +41,12 @@ def read(extracted):
 
 
 if __name__ == '__main__':
-    extracted = extract(scrape(URL))
-    print(extracted)
-    content = read(extracted)
-    if extracted != "No upcoming tours":
-        if extracted not in content:
-            store(extracted)
-            send_email(extracted, sender, password, receiver)
+    while True:
+        extracted = extract(scrape(URL))
+        print(extracted)
+        content = read(extracted)
+        if extracted != "No upcoming tours":
+            if extracted not in content:
+                store(extracted)
+                send_email(extracted, sender, password, receiver)
+        time.sleep(2)
