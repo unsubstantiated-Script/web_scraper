@@ -1,5 +1,6 @@
 Next Release
 -
+* Adding DB functionality
 
 v1.1.0
 * Web Scraper
