@@ -1,5 +1,7 @@
 Next Release
 -
+
+v1.2.0
 * Adding DB functionality
 
 v1.1.0
